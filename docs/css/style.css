@@ -981,6 +981,14 @@ footer ul li a {
   }
 
   #header .container .row .hover-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-border-radius: 0;
             border-radius: 0;
     background-color: transparent !important;
@@ -991,6 +999,7 @@ footer ul li a {
   }
 
   #header .container .row .hover-menu .mobile-burger {
+    margin: auto 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -1000,21 +1009,22 @@ footer ul li a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   #header .container .row .hover-menu .mobile-burger span {
     display: block;
-    margin: 2px 0;
+    margin: 4px 0;
     width: 100%;
-    height: 9px;
+    height: 4px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
     background-color: #104153 !important;
@@ -1079,6 +1089,13 @@ footer ul li a {
 
   #header .container .row .body-hover-menu {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section .title h1 {
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 
